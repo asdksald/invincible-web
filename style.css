@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090b12;
+    color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+section { scroll-margin-top: 85px; }
+.section { padding-top: 90px; padding-bottom: 90px; }
+.section-dark { background: linear-gradient(135deg, #111522, #090b12); }
+
+h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.linea {
+    width: 90px;
+    height: 5px;
+    background: #e63946;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    background: rgba(5, 7, 13, 0.97);
+    border-bottom: 2px solid #d62839;
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+}
+
+.logo { font-size: 25px; font-weight: 900; letter-spacing: 2px; }
+.logo span { color: #e63946; }
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.nav-link:hover { color: #ff424f !important; }
+
+/* El menú hamburguesa queda visible tanto en PC como en celulares */
+.navbar > .container { flex-wrap: wrap; }
+.navbar-toggler { display: block !important; border-color: #e63946; }
+.navbar-toggler:focus { box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.3); }
+.navbar-collapse { flex-basis: 100%; flex-grow: 1; width: 100%; }
+.navbar-nav { padding-top: 12px; }
+
+/* PORTADA */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(5, 7, 13, 0.95), rgba(5, 7, 13, 0.45)),
+        url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564") center/cover no-repeat;
+    padding: 130px 0 80px;
+}
+.hero-content { animation: aparecer 1.2s ease; }
+.subtitulo { color: #ff424f; font-weight: bold; letter-spacing: 5px; }
+.hero h1 {
+    font-size: clamp(3.5rem, 11vw, 8rem);
+    font-weight: 1000;
+    color: #e63946;
+    text-shadow: 5px 5px 0 #721c27;
+    letter-spacing: -3px;
+}
+.hero h3 { color: #f5d547; font-weight: bold; letter-spacing: 3px; }
+.hero-text { max-width: 600px; line-height: 1.8; margin: 25px 0; font-size: 1.1rem; }
+
+/* BOTONES */
+.btn-danger { background: #d62839; border-color: #d62839; }
+.btn-danger:hover { background: #a7192a; border-color: #a7192a; transform: translateY(-3px); }
+.btn { transition: 0.3s; }
+
+/* PERSONAJES */
+.character-card {
+    background: #171c29;
+    border: 1px solid #303849;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.4s;
+}
+.character-card:hover { transform: translateY(-10px); border-color: #e63946; box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2); }
+.character-card img { width: 100%; height: 300px; object-fit: cover; }
+.character-info { padding: 25px; }
+.character-info h3 { color: #f5d547; font-weight: bold; }
+.character-info p { color: #c5c8d0; line-height: 1.7; margin-top: 15px; }
+.tag { display: inline-block; background: #a7192a; color: white; padding: 5px 12px; border-radius: 5px; font-size: 12px; font-weight: bold; }
+
+/* INFORMACIÓN INTERACTIVA */
+.info-box {
+    background: linear-gradient(135deg, #191e2b, #252c3d);
+    border: 2px solid #e63946;
+    padding: 35px;
+    border-radius: 15px;
+    min-height: 150px;
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.15);
+    transition: 0.3s;
+}
+.info-box h3 { color: #f5d547; font-weight: bold; margin-bottom: 15px; }
+
+/* LORE */
+.lore-img { width: 100%; height: 350px; object-fit: cover; border-radius: 12px; border: 2px solid #343b4d; }
+#lore h3 { color: #e63946; font-weight: bold; margin-bottom: 20px; }
+#lore p { line-height: 1.9; color: #c5c8d0; }
+
+/* TEMPORADAS */
+.season-card { background: linear-gradient(120deg, #171c29, #111522); border-left: 5px solid #e63946; border-radius: 8px; padding: 30px; margin-bottom: 25px; transition: 0.3s; }
+.season-card:hover { transform: translateX(8px); background: #20283a; }
+.season-card h3 { color: #f5d547; font-weight: bold; margin-bottom: 15px; }
+.season-card p { color: #c5c8d0; line-height: 1.8; margin-bottom: 0; }
+
+/* SEGURIDAD INFORMÁTICA */
+.seguridad-intro { max-width: 850px; margin: 0 auto; color: #c5c8d0; line-height: 1.8; }
+.security-card {
+    background: #171c29;
+    border: 1px solid #303849;
+    border-top: 4px solid #e63946;
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: 0.3s;
+}
+.security-card:hover { transform: translateY(-6px); border-color: #e63946; }
+.security-card h3 { color: #f5d547; font-size: 1.2rem; font-weight: bold; margin: 15px 0; }
+.security-card p { color: #c5c8d0; line-height: 1.7; margin-bottom: 0; }
+.security-icon { color: #e63946; font-size: 2.3rem; }
+.security-tips { background: linear-gradient(135deg, #191e2b, #252c3d); border: 1px solid #e63946; border-radius: 15px; padding: 30px; }
+.security-tips h3 { color: #f5d547; font-weight: bold; margin-bottom: 20px; }
+.security-tips ul { margin-bottom: 0; padding-left: 22px; color: #d5d7de; line-height: 2; }
+
+/* CARRUSEL */
+.carousel { border-radius: 15px; overflow: hidden; border: 2px solid #343b4d; }
+.carousel-item img { height: 550px; object-fit: cover; }
+.carousel-caption { background: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; bottom: 35px; }
+.carousel-caption h3 { color: #f5d547; font-weight: bold; }
+
+/* MODAL */
+.modal-custom { background: #171c29; color: white; border: 1px solid #e63946; }
+.modal-header { border-bottom: 1px solid #e63946; }
+.modal-title { color: #f5d547; font-weight: bold; }
+
+/* PIE DE PÁGINA */
+footer { background: #05070d; border-top: 3px solid #e63946; text-align: center; padding: 45px 15px; }
+footer h3 { color: #e63946; font-size: 35px; font-weight: 900; }
+footer p { color: #c5c8d0; }
+.copyright { font-size: 13px; margin-top: 20px; }
+
+/* ANIMACIONES */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TABLETS */
+@media (max-width: 991px) {
+    .hero { min-height: 85vh; }
+    .carousel-item img { height: 400px; }
+}
+
+/* CELULARES */
+@media (max-width: 576px) {
+    .section { padding-top: 65px; padding-bottom: 65px; }
+    .hero { min-height: 90vh; text-align: center; background-position: center; }
+    .hero h1 { font-size: 3.5rem; }
+    .hero h3 { font-size: 1rem; }
+    .hero-text { font-size: 0.95rem; }
+    .character-card img { height: 260px; }
+    .lore-img { height: 240px; }
+    .carousel-item img { height: 260px; }
+    .carousel-caption { bottom: 15px; padding: 8px; }
+    .carousel-caption h3 { font-size: 1rem; }
+    .carousel-caption p { font-size: 0.8rem; margin-bottom: 0; }
+    .info-box { padding: 20px; }
+    .security-tips { padding: 20px; }
+}
