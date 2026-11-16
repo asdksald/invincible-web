@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página dedicada al universo de Invincible">
+    <title>INVINCIBLE | Universo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BARRA DE NAVEGACIÓN -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo" href="#inicio">
+            IN<span>V</span>INCIBLE
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#personajes">Personajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lore">Universo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#temporadas">Temporadas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seguridad">Seguridad informática</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PORTADA -->
+<header id="inicio" class="hero">
+    <div class="hero-content container">
+        <p class="subtitulo">UNIVERSO DE SUPERHÉROES</p>
+
+        <h1>INVINCIBLE</h1>
+
+        <h3>EL PODER TIENE UN PRECIO</h3>
+
+        <p class="hero-text">
+            Un joven descubre que ser un superhéroe es mucho más
+            complicado de lo que imaginaba. Entre secretos,
+            guerras intergalácticas y decisiones difíciles,
+            Mark Grayson deberá descubrir quién quiere ser.
+        </p>
+
+        <a href="#personajes" class="btn btn-danger btn-lg">
+            EXPLORAR UNIVERSO
+        </a>
+    </div>
+</header>
+
+<!-- INTRODUCCIÓN -->
+<section class="section container text-center">
+    <h2>BIENVENIDO AL UNIVERSO</h2>
+    <div class="linea"></div>
+
+    <p>
+        Invincible es una serie animada basada en el cómic creado
+        por Robert Kirkman, Cory Walker y Ryan Ottley.
+        La historia sigue a Mark Grayson, un adolescente que hereda
+        extraordinarios poderes de su padre, Omni-Man.
+    </p>
+
+    <p>
+        A medida que descubre sus habilidades, Mark también descubre
+        secretos sobre su familia, su planeta y una civilización
+        extraterrestre que amenaza el futuro de la Tierra.
+    </p>
+</section>
+
+<!-- PERSONAJES -->
+<section id="personajes" class="section section-dark">
+    <div class="container">
+        <h2 class="text-center">PERSONAJES PRINCIPALES</h2>
+        <div class="linea"></div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfmjXq4n43Jdn1a4wqQFbLpu_-gii_LgAfdFQHmxVFwg&s=10"
+                         alt="Mark Grayson">
+                    <div class="character-info">
+                        <h3>Mark Grayson</h3>
+                        <span class="tag">INVINCIBLE</span>
+                        <p>
+                            Es el protagonista. Hijo de Omni-Man,
+                            posee fuerza sobrehumana, vuelo,
+                            resistencia y una gran capacidad de
+                            recuperación.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('invincible')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIQxvqYD6Ufqr_WLysPfKQujQalbRaDn0JzywVu0CdVA&s=10"
+                         alt="Omni-Man">
+                    <div class="character-info">
+                        <h3>Nolan Grayson</h3>
+                        <span class="tag">OMNI-MAN</span>
+                        <p>
+                            Padre de Mark y uno de los seres
+                            más poderosos del universo.
+                            Es un viltrumita con una misión
+                            que cambiará la vida de su familia.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('omniman')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSir1qi0dVCLL0-hitx3IOD43zX-8HXn03jWKEWDruCwQ&s=10"
+                         alt="Atom Eve">
+                    <div class="character-info">
+                        <h3>Atom Eve</h3>
+                        <span class="tag">HEROÍNA</span>
+                        <p>
+                            Una superheroína capaz de manipular
+                            la materia y transformar su entorno.
+                            Es una de las personas más importantes
+                            en la vida de Mark.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('eve')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06I8MI-DRwc9uLEJXWLCx4rsjo1vGLtPOJeeogmdMuA&s=10"
+                         alt="Allen el Alien">
+                    <div class="character-info">
+                        <h3>Allen el Alien</h3>
+                        <span class="tag">COALICIÓN</span>
+                        <p>
+                            Un extraterrestre muy poderoso que
+                            trabaja para la Coalición de Planetas.
+                            Se convierte en un importante aliado
+                            de Mark.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('allen')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DNTUhwy66WD9kTbeRqLAH_PzpAH4_L0NrM95U55SmQ&s=10"
+                         alt="Robot">
+                    <div class="character-info">
+                        <h3>Robot</h3>
+                        <span class="tag">GUARDIANES</span>
+                        <p>
+                            Un personaje extremadamente inteligente
+                            y estratégico. Su capacidad tecnológica
+                            lo convierte en un integrante importante
+                            de los Guardianes del Globo.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('robot')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="character-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTe1JxhgzY-Muzzz94nOR03siFQb1nsHZMJ3BhKqquQ&s=10"
+                         alt="Thragg">
+                    <div class="character-info">
+                        <h3>Thragg</h3>
+                        <span class="tag">VILTRUMITA</span>
+                        <p>
+                            El Gran Regente del Imperio Viltrumita.
+                            Es uno de los seres más poderosos
+                            y temidos de toda la serie.
+                        </p>
+                        <button class="btn btn-outline-danger"
+                                onclick="mostrarInfo('thragg')">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- VENTANA INTERACTIVA -->
+<section class="section container text-center">
+    <h2>DESCUBRÍ LAS GRANDES FACCCIONES</h2>
+    <div class="linea"></div>
+
+    <p>Seleccioná una opción para conocer más sobre este universo.</p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+        <button class="btn btn-danger btn-lg"
+                onclick="mostrarInfo('viltrumitas')">
+            <i class="bi bi-stars"></i> VILTRUMITAS
+        </button>
+
+        <button class="btn btn-primary btn-lg"
+                onclick="mostrarInfo('coalicion')">
+            <i class="bi bi-globe"></i> COALICIÓN ESPACIAL
+        </button>
+
+        <button class="btn btn-warning btn-lg"
+                onclick="mostrarInfo('invincible')">
+            <i class="bi bi-lightning-fill"></i> INVINCIBLE
+        </button>
+
+    </div>
+
+    <div id="resultado" class="info-box mt-4">
+        <h3>EXPLORÁ EL UNIVERSO</h3>
+        <p>Seleccioná una de las facciones para descubrir su historia.</p>
+    </div>
+</section>
+
+<!-- LORE -->
+<section id="lore" class="section section-dark">
+    <div class="container">
+        <h2 class="text-center">EL LORE DE INVINCIBLE</h2>
+        <div class="linea"></div>
+
+        <div class="row align-items-center g-4 mt-4">
+            <div class="col-lg-6">
+                <img class="lore-img"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjE2HCBKqjXWhx6DqXQSPxpAX7853OQ_DEJVTgVJHNBg&s=10"
+                     alt="Imperio Viltrumita">
+            </div>
+
+            <div class="col-lg-6">
+                <h3>EL IMPERIO VILTRUMITA</h3>
+                <p>
+                    Los viltrumitas son una poderosa raza alienígena
+                    originaria del planeta Viltrum. Poseen una fuerza
+                    extraordinaria, pueden volar, vivir durante
+                    muchísimo tiempo y resistir condiciones extremas.
+                </p>
+                <p>
+                    Su imperio busca expandir su dominio por el
+                    universo. Consideran que otras civilizaciones
+                    deben someterse a su autoridad.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-4 mt-5">
+            <div class="col-lg-6 order-lg-2">
+                <img class="lore-img"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf3MysjTQUw38DfCNR8Ni5spgc1LYk3bM62KBrJ0pzbw&s=10"
+                     alt="Coalición de Planetas">
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+                <h3>LA COALICIÓN DE PLANETAS</h3>
+                <p>
+                    Es una organización formada por diferentes
+                    especies y civilizaciones que buscan detener
+                    la expansión del Imperio Viltrumita.
+                </p>
+                <p>
+                    Entre sus integrantes se encuentra Allen el
+                    Alien, quien participa en misiones para
+                    encontrar aliados y combatir la amenaza
+                    viltrumita.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-4 mt-5">
+            <div class="col-lg-6">
+                <img class="lore-img"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99Sb9N9B05619h5T_9WMK0alInEObKcovQGvHWncIZA&s=10"
+                     alt="Invincible">
+            </div>
+
+            <div class="col-lg-6">
+                <h3>MARK GRAYSON: EL DESTINO DE UN HÉROE</h3>
+                <p>
+                    Mark intenta encontrar su propio camino mientras
+                    descubre la verdad sobre su origen.
+                    Su herencia viltrumita lo coloca en el centro
+                    de un conflicto que afecta a toda la galaxia.
+                </p>
+                <p>
+                    Su mayor desafío no consiste solamente en
+                    desarrollar sus poderes, sino en decidir
+                    qué clase de persona quiere ser.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEMPORADAS -->
+<section id="temporadas" class="section container">
+    <h2 class="text-center">TEMPORADAS DE LA SERIE</h2>
+    <div class="linea"></div>
+
+    <div class="season-card mt-5">
+        <h3>TEMPORADA 1 (2021)</h3>
+        <p>
+            Mark comienza a desarrollar sus poderes y aprende
+            a convertirse en superhéroe. Sin embargo, una serie
+            de acontecimientos revela que su padre, Omni-Man,
+            esconde un secreto que cambiará todo lo que conoce.
+        </p>
+    </div>
+
+    <div class="season-card">
+        <h3>TEMPORADA 2 (2023-2024)</h3>
+        <p>
+            Mark intenta recuperarse de los acontecimientos
+            anteriores mientras enfrenta nuevas amenazas.
+            Aparecen Angstrom Levy y otros enemigos, y el
+            conflicto con los viltrumitas comienza a crecer.
+        </p>
+    </div>
+
+    <div class="season-card">
+        <h3>TEMPORADA 3 (2025)</h3>
+        <p>
+            Mark se enfrenta a desafíos cada vez más difíciles.
+            Su entrenamiento y sus relaciones personales
+            evolucionan, mientras aparecen enemigos como
+            Powerplex y Conquest. Sus decisiones tienen
+            consecuencias cada vez mayores.
+        </p>
+    </div>
+
+    <div class="season-card">
+        <h3>TEMPORADA 4 (2026)</h3>
+        <p>
+            El universo entra en una etapa de conflicto todavía
+            mayor. Mark enfrenta las consecuencias de los
+            acontecimientos anteriores, mientras aparecen
+            amenazas como Thragg, Dinosaurus y Universa.
+            La guerra contra el Imperio Viltrumita alcanza
+            un nuevo nivel.
+        </p>
+    </div>
+
+    <div class="season-card">
+        <h3>TEMPORADA 5 (ANUNCIADA)</h3>
+        <p>
+            La quinta temporada está confirmada y prevista
+            para 2027. Su historia todavía no se ha estrenado,
+            por lo que sus acontecimientos no están incluidos
+            en este resumen.
+        </p>
+    </div>
+</section>
+
+<!-- CARRUSEL -->
+<section id="galeria" class="section section-dark">
+    <div class="container">
+        <h2 class="text-center">GALERÍA ÉPICA</h2>
+        <div class="linea"></div>
+
+        <div id="carrusel" class="carousel slide mt-5"
+             data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel"
+                        data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrusel"
+                        data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrusel"
+                        data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://wallpapers.com/images/hd/invincible-mark-reflection-7plimjn4yjdvq28a.jpg"
+                         class="d-block w-100"
+                         alt="Invincible">
+                    <div class="carousel-caption">
+                        <h3>INVINCIBLE</h3>
+                        <p>El nacimiento de un nuevo héroe.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://i.redd.it/k19ldmpj9nz61.png"
+                         class="d-block w-100"
+                         alt="Omni-Man">
+                    <div class="carousel-caption">
+                        <h3>OMNI-MAN</h3>
+                        <p>El poder de un viltrumita.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://preview.redd.it/so-that-couldnt-have-been-the-first-time-viltrumites-blew-v0-qphqqr76guwg1.jpeg?width=640&crop=smart&auto=webp&s=f1efefb7c9b7b384fc5a034c780279da9da379ec"
+                         class="d-block w-100"
+                         alt="Guerra espacial">
+                    <div class="carousel-caption">
+                        <h3>GUERRA INTERGALÁCTICA</h3>
+                        <p>El destino de múltiples civilizaciones.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SEGURIDAD INFORMÁTICA -->
+<section id="seguridad" class="section container">
+    <h2 class="text-center">SEGURIDAD INFORMÁTICA</h2>
+    <div class="linea"></div>
+
+    <p class="text-center seguridad-intro">
+        La seguridad informática reúne medidas y buenas prácticas para proteger
+        nuestros dispositivos, redes y datos personales frente a amenazas digitales.
+    </p>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-3">
+            <article class="security-card h-100">
+                <div class="security-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                <h3>Seguridad informática</h3>
+                <p>Consiste en proteger computadoras, celulares, redes y archivos para evitar accesos no autorizados, daños o robos de información.</p>
+            </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <article class="security-card h-100">
+                <div class="security-icon"><i class="bi bi-bug-fill"></i></div>
+                <h3>Virus informáticos</h3>
+                <p>Son programas maliciosos que pueden adherirse a archivos o programas y propagarse cuando se ejecutan. Pueden alterar el funcionamiento del dispositivo.</p>
+            </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <article class="security-card h-100">
+                <div class="security-icon"><i class="bi bi-exclamation-triangle-fill"></i></div>
+                <h3>Malware</h3>
+                <p>Es el nombre general para el software malicioso. Incluye virus, troyanos, spyware y ransomware, entre otras amenazas que pueden dañar equipos o afectar la información.</p>
+            </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <article class="security-card h-100">
+                <div class="security-icon"><i class="bi bi-person-vcard-fill"></i></div>
+                <h3>Protección de datos personales</h3>
+                <p>Los datos personales son información que permite identificar a alguien, como su nombre, dirección, teléfono o contraseñas. Es importante compartirlos solo cuando sea necesario y en sitios confiables.</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="security-tips mt-5">
+        <h3><i class="bi bi-shield-check"></i> Consejos para navegar de forma segura</h3>
+        <ul>
+            <li>Usá contraseñas largas y diferentes para cada cuenta.</li>
+            <li>Activá la autenticación en dos pasos cuando esté disponible.</li>
+            <li>No abras enlaces ni archivos adjuntos de remitentes desconocidos.</li>
+            <li>Descargá aplicaciones y archivos desde sitios oficiales o confiables.</li>
+            <li>Mantené actualizado el sistema operativo y las aplicaciones.</li>
+            <li>No publiques datos personales ni compartas contraseñas.</li>
+            <li>Realizá copias de seguridad de los archivos importantes.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <h3>INVINCIBLE</h3>
+    <p>EL UNIVERSO ES MUCHO MÁS GRANDE DE LO QUE IMAGINÁS.</p>
+    <p class="copyright">
+        Página creada con HTML, CSS, JavaScript y Bootstrap.
+    </p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal fade" id="modalPersonaje" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-custom">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitulo"></h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modalTexto"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript propio -->
+<script src="script.js"></script>
+
+</body>
+</html>
